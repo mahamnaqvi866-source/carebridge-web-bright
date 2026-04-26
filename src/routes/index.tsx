@@ -51,10 +51,10 @@ function HomePage() {
               <ShieldCheck className="h-3.5 w-3.5" /> Licensed & Insured NEMT
             </span>
             <h1 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.05] text-balance">
-              Safe & Reliable Medical Transportation You Can Trust
+              Safe, Reliable Non-Emergency Medical Transportation in California
             </h1>
             <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Professional non-emergency medical transportation across San Bernardino and Southern California. Wheelchair-accessible vans, trained drivers, and on-time service for every appointment.
+              Providing safe, comfortable, and on-time medical transportation for seniors, patients, and individuals with mobility needs.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all">
@@ -64,8 +64,8 @@ function HomePage() {
                 <Phone className="h-4 w-4" /> Call Now
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted-foreground">
-              {["5+ Years Serving the Community", "Insurance Accepted", "24/7 Scheduling"].map((t) => (
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-foreground">
+              {["Licensed & Insured", "On-Time Service", "Professional Drivers"].map((t) => (
                 <span key={t} className="inline-flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-primary" /> {t}
                 </span>
