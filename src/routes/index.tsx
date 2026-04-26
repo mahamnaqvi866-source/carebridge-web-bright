@@ -51,10 +51,10 @@ function HomePage() {
               <ShieldCheck className="h-3.5 w-3.5" /> Licensed & Insured NEMT
             </span>
             <h1 className="mt-5 font-display text-4xl md:text-5xl lg:text-6xl font-extrabold text-foreground leading-[1.05] text-balance">
-              Safe & Reliable Medical Transportation You Can Trust
+              Safe, Reliable Non-Emergency Medical Transportation in California
             </h1>
             <p className="mt-5 text-base md:text-lg text-muted-foreground leading-relaxed max-w-xl">
-              Professional non-emergency medical transportation across San Bernardino and Southern California. Wheelchair-accessible vans, trained drivers, and on-time service for every appointment.
+              Providing safe, comfortable, and on-time medical transportation for seniors, patients, and individuals with mobility needs.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-7 py-3.5 text-sm font-semibold text-primary-foreground shadow-soft hover:shadow-glow hover:-translate-y-0.5 transition-all">
@@ -64,8 +64,8 @@ function HomePage() {
                 <Phone className="h-4 w-4" /> Call Now
               </a>
             </div>
-            <div className="mt-10 flex flex-wrap gap-x-8 gap-y-3 text-sm text-muted-foreground">
-              {["5+ Years Serving the Community", "Insurance Accepted", "24/7 Scheduling"].map((t) => (
+            <div className="mt-8 flex flex-wrap gap-x-6 gap-y-3 text-sm font-medium text-foreground">
+              {["Licensed & Insured", "On-Time Service", "Professional Drivers"].map((t) => (
                 <span key={t} className="inline-flex items-center gap-2">
                   <CheckCircle2 className="h-4 w-4 text-primary" /> {t}
                 </span>
@@ -185,19 +185,48 @@ function HomePage() {
         </div>
       </section>
 
+      {/* TESTIMONIALS */}
+      <section className="container-page py-20 md:py-28">
+        <div className="max-w-2xl mx-auto text-center">
+          <span className="text-xs font-bold uppercase tracking-wider text-primary">Testimonials</span>
+          <h2 className="mt-2 font-display text-3xl md:text-4xl font-bold text-foreground text-balance">Trusted by families across California</h2>
+          <p className="mt-3 text-muted-foreground">Real feedback from the patients, families, and care coordinators we serve every day.</p>
+        </div>
+        <div className="mt-12 grid md:grid-cols-3 gap-5">
+          {[
+            { quote: "Very reliable and professional service. The driver was on time, kind, and helped my mother into the van with so much patience. Highly recommended!", name: "Linda M.", role: "Daughter of dialysis patient" },
+            { quote: "CareBridge has transported my father to weekly appointments for over a year. Always on time, always sanitized, always courteous. Worth every penny.", name: "Robert T.", role: "Family caregiver" },
+            { quote: "As a discharge planner I rely on CareBridge for safe stretcher transfers. Their team coordinates seamlessly with our case managers.", name: "Angela P.", role: "Hospital case manager" },
+          ].map((t) => (
+            <figure key={t.name} className="rounded-2xl bg-card border border-border p-7 shadow-soft hover:shadow-card transition-all flex flex-col">
+              <div className="flex gap-0.5 text-primary" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <svg key={i} className="h-4 w-4 fill-current" viewBox="0 0 20 20" aria-hidden="true"><path d="M10 1.5l2.6 5.27 5.82.85-4.21 4.1.99 5.78L10 14.77l-5.2 2.73.99-5.78L1.58 7.62l5.82-.85L10 1.5z" /></svg>
+                ))}
+              </div>
+              <blockquote className="mt-4 text-sm text-foreground leading-relaxed flex-1">"{t.quote}"</blockquote>
+              <figcaption className="mt-5 pt-5 border-t border-border">
+                <p className="font-display font-bold text-foreground text-sm">{t.name}</p>
+                <p className="text-xs text-muted-foreground mt-0.5">{t.role}</p>
+              </figcaption>
+            </figure>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="container-page py-20">
         <div className="relative overflow-hidden rounded-3xl bg-gradient-primary p-10 md:p-16 text-center shadow-glow">
           <div className="absolute inset-0 opacity-20" style={{ backgroundImage: "radial-gradient(circle at 20% 20%, white 1px, transparent 1px)", backgroundSize: "24px 24px" }} />
           <div className="relative">
-            <h2 className="font-display text-3xl md:text-5xl font-extrabold text-primary-foreground text-balance">Need a Ride? We're Here to Help</h2>
+            <h2 className="font-display text-3xl md:text-5xl font-extrabold text-primary-foreground text-balance">Need a Ride? We're Available to Help</h2>
             <p className="mt-4 text-primary-foreground/85 max-w-xl mx-auto">Book your next medical transport in minutes — or call our dispatch team directly.</p>
             <div className="mt-8 flex flex-wrap gap-3 justify-center">
               <Link to="/contact" className="inline-flex items-center gap-2 rounded-full bg-background px-7 py-3.5 text-sm font-semibold text-primary hover:bg-background/90 transition-colors">
-                Book Now <ArrowRight className="h-4 w-4" />
+                Book a Ride <ArrowRight className="h-4 w-4" />
               </Link>
               <a href="tel:+19095557842" className="inline-flex items-center gap-2 rounded-full border-2 border-primary-foreground/40 px-7 py-3.5 text-sm font-semibold text-primary-foreground hover:bg-primary-foreground/10 transition-colors">
-                <Phone className="h-4 w-4" /> (909) 555-7842
+                <Phone className="h-4 w-4" /> Call Now
               </a>
             </div>
           </div>
