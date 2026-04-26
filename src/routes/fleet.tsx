@@ -37,6 +37,12 @@ const vehicles = [
     desc: "Specialized stretcher vehicles for non-ambulatory patients, including hospital discharge and inter-facility transfers.",
     features: ["Bariatric-capable stretcher", "Trained transport attendants", "Inter-facility transfers", "Direct case-manager coordination"],
   },
+  {
+    image: sedanImg,
+    title: "Long Distance Vehicles",
+    desc: "Comfortable, fuel-efficient vehicles equipped for long-distance non-emergency medical transport across California and neighboring states.",
+    features: ["Extended-range comfort seating", "Rest-stop coordination", "Two-driver option for long trips", "Door-through-door service"],
+  },
 ];
 
 const standards = [
