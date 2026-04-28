@@ -42,6 +42,12 @@ export const Route = createRootRoute({
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "CareBridge Medical Transport" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "CareBridge Medical Transport | NEMT in San Bernardino, CA" },
+      { name: "twitter:title", content: "CareBridge Medical Transport | NEMT in San Bernardino, CA" },
+      { property: "og:description", content: "Safe, reliable non-emergency medical transportation in San Bernardino & Southern California. Wheelchair, dialysis, doctor appointments. Call (909) 555-7842." },
+      { name: "twitter:description", content: "Safe, reliable non-emergency medical transportation in San Bernardino & Southern California. Wheelchair, dialysis, doctor appointments. Call (909) 555-7842." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d1e3fcb1-19c6-4793-a2cc-aaea61de219f/id-preview-5b8f24bb--2a80c363-087c-4d46-a43d-c50f891601b7.lovable.app-1777236285484.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/d1e3fcb1-19c6-4793-a2cc-aaea61de219f/id-preview-5b8f24bb--2a80c363-087c-4d46-a43d-c50f891601b7.lovable.app-1777236285484.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
