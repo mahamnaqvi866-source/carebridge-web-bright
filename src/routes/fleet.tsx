@@ -13,7 +13,9 @@ export const Route = createFileRoute("/fleet")({
       { property: "og:description", content: "ADA-compliant wheelchair vans, stretcher transport, and standard sedans — all sanitized and inspected." },
       { property: "og:image", content: wheelchairImg },
       { name: "twitter:image", content: wheelchairImg },
+      { property: "og:url", content: "https://carebridge-web-bright.lovable.app/fleet" },
     ],
+    links: [{ rel: "canonical", href: "https://carebridge-web-bright.lovable.app/fleet" }],
   }),
   component: FleetPage,
 });

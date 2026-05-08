@@ -11,7 +11,9 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Safe, reliable non-emergency medical transportation. Wheelchair vans, dialysis transport, doctor appointments across San Bernardino & Southern California. Call (909) 555-7842." },
       { property: "og:title", content: "CareBridge Medical Transport — Safe Rides You Can Trust" },
       { property: "og:description", content: "Licensed & insured NEMT serving San Bernardino. Book a wheelchair, dialysis, or doctor-visit ride today." },
+      { property: "og:url", content: "https://carebridge-web-bright.lovable.app/" },
     ],
+    links: [{ rel: "canonical", href: "https://carebridge-web-bright.lovable.app/" }],
   }),
   component: HomePage,
 });

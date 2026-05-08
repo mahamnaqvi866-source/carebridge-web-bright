@@ -11,7 +11,9 @@ export const Route = createFileRoute("/about")({
       { property: "og:description", content: "5+ years of safe, compassionate NEMT services led by owner Michael Anderson." },
       { property: "og:image", content: aboutImage },
       { name: "twitter:image", content: aboutImage },
+      { property: "og:url", content: "https://carebridge-web-bright.lovable.app/about" },
     ],
+    links: [{ rel: "canonical", href: "https://carebridge-web-bright.lovable.app/about" }],
   }),
   component: AboutPage,
 });

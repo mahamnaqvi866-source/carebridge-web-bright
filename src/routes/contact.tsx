@@ -9,7 +9,9 @@ export const Route = createFileRoute("/contact")({
       { name: "description", content: "Contact CareBridge Medical Transport at (909) 555-7842 to book non-emergency medical transportation in San Bernardino & Southern California. Email, phone, and online form." },
       { property: "og:title", content: "Contact CareBridge Medical Transport" },
       { property: "og:description", content: "Book a wheelchair, dialysis, or doctor-visit ride. Call (909) 555-7842 or use our online form." },
+      { property: "og:url", content: "https://carebridge-web-bright.lovable.app/contact" },
     ],
+    links: [{ rel: "canonical", href: "https://carebridge-web-bright.lovable.app/contact" }],
   }),
   component: ContactPage,
 });

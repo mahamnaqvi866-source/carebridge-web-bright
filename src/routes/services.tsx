@@ -8,7 +8,9 @@ export const Route = createFileRoute("/services")({
       { name: "description", content: "CareBridge NEMT services: wheelchair transportation, dialysis transport, doctor appointments, hospital discharge & elderly rides in San Bernardino, CA. Call (909) 555-7842." },
       { property: "og:title", content: "Our NEMT Services — CareBridge Medical Transport" },
       { property: "og:description", content: "Wheelchair-accessible, dialysis, doctor visit, and hospital discharge transportation across Southern California." },
+      { property: "og:url", content: "https://carebridge-web-bright.lovable.app/services" },
     ],
+    links: [{ rel: "canonical", href: "https://carebridge-web-bright.lovable.app/services" }],
   }),
   component: ServicesPage,
 });
